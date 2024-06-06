@@ -1,0 +1,121 @@
+.switch {
+  width: 8.4rem;
+  height: 4.8rem;
+  border: none;
+  border-radius: 20rem;
+  padding: 1.2rem;
+  gap: 1.2rem;
+  position: relative;
+  display: flex;
+  background-color: $color-primary-light;
+
+  &__icon-box {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &--disabled {
+      opacity: 0.6;
+    }
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__circle {
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    transition: transform 0.15s ease-out;
+
+    &--right {
+      transform: translateX(100%);
+    }
+  }
+}
+
+.section-button {
+  width: 100%;
+  height: 12rem;
+  border-radius: 2.4rem;
+  box-shadow: 0 0.4rem 0.8rem rgba($color-primary-dark, 0.2);
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+
+  &--animated {
+    animation: slideUp 0.4s cubic-bezier(0.14, 0, 0.07, 1) forwards;
+  }
+
+  &__name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: $color-white;
+    text-shadow: 0px 1px 3px rgba($color-primary-dark, 0.5);
+    padding: 0.8rem 3.2rem;
+    display: inline-block;
+    border-radius: 200rem;
+    background-color: rgba($color-primary-dark, 0.4);
+  }
+}
+
+.button {
+  &--secondary {
+    padding: 2.4rem 4.8rem;
+    border: 1px rgba($color-primary-dark, 0.5) solid;
+    background-color: transparent;
+    border-radius: 100rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-primary-dark;
+  }
+
+  &--round {
+    width: 4.8rem;
+    height: 4.8rem;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 38% 50%;
+    background-size: 50%;
+    top: 6.4rem;
+    left: 1.6rem;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba($color-primary-dark, 0.3);
+    background-color: $color-white;
+  }
+
+  &--up {
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    bottom: 2.4rem;
+    right: 1.6rem;
+    left: unset;
+    top: unset;
+    font-size: 2.4rem;
+    color: rgba($color-primary-dark, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

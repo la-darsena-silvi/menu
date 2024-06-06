@@ -1,0 +1,68 @@
+.dropdown-item {
+  line-height: 140%;
+
+  &__subsection {
+    display: flex;
+    color: $color-accent;
+    text-transform: uppercase;
+    font-weight: 500;
+    align-items: center;
+    gap: 1.6rem;
+    font-size: 1.4rem;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      flex: 1;
+      background-color: $color-accent;
+    }
+  }
+
+  &__info {
+    color: $color-accent;
+    font-weight: 400;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: 0.05rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.6rem;
+  }
+
+  &__name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.125rem;
+    color: rgba($color-primary-dark, 0.95);
+
+    &--lowercase {
+      text-transform: none;
+      letter-spacing: 0.08rem;
+    }
+  }
+  &__text {
+    letter-spacing: 0.0425rem;
+  }
+  &__price {
+    color: $color-accent;
+    font-weight: 400;
+    flex-shrink: 0;
+    font-size: 1.4rem;
+  }
+
+  .allergene-container {
+    margin-top: 0.8rem;
+    display: inline-block;
+    &:not(&:last-child) {
+      margin-right: 0.4rem;
+    }
+  }
+}

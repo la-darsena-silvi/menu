@@ -3,7 +3,7 @@ const Ristorante = [
     nome: "menù degustazione",
     contenuto: [
       {
-        sottosezione: "50€ bevande escluse",
+        sottosezione: "60€ bevande escluse",
       },
       {
         nome: "Antipasto",

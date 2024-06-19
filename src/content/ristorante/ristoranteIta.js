@@ -360,6 +360,10 @@ const Ristorante = [
         nome: "Distillati",
         prezzo: "6,00",
       },
+      {
+        informazione:
+          "Coperto €2,00",
+      },
     ],
   },
 ];

@@ -1,7 +1,11 @@
 const Ristorante = [
   {
-    nome: "menù degustazione",
+    nome: "Menù degustazione",
     contenuto: [
+      {
+        informazione:
+          "In assenza di prodotto fresco può essere somministrato prodotto congelato in origine a bordo",
+      },
       {
         sottosezione: "60€ bevande escluse",
       },
@@ -27,15 +31,18 @@ const Ristorante = [
     nome: "antipasti ",
     contenuto: [
       {
+        sottosezione: "I Crudi",
+      },    
+      {
         nome: "Antipasti La Darsena",
-        testo: "Assortimento di antipasti crudi freddi e caldi.",
-        prezzo: "40,00",
+        testo: "Include una portata di guscio,una portata di crudo,un bis di freddi e un bis di caldi",
+        prezzo: "45,00",
       },
       {
         nome: "I crudi di mare",
         testo:
           "Assortimento di antipasti crudi a seconda del pescato di stagione.",
-        prezzo: "25,00",
+        prezzo: "30,00",
         allergeni: [
           "uova",
           "pesce",
@@ -47,72 +54,90 @@ const Ristorante = [
         ],
       },
       {
-        nome: "Tris di caldi *",
-        testo:
-          "Seppiolina arrosto con peperoni, filetto di merluzzo al vapore con crema di ceci e curcuma, tonno dorato con maionese ai frutti di bosco.",
-        prezzo: "15,00",
-        allergeni: ["cereali", "uova", "pesce", "molluschi"],
-      },
-      {
         sottosezione: "le tartare",
       },
       {
         nome: "Tartare di tonno rosso *",
         testo:
           "Tartare di tonno rosso condita con sale Maldon e olio di produzione propria.",
-        prezzo: "15,00",
+        prezzo: "18,00",
         allergeni: ["crostacei", "uova", "pesce", "soia", "sedano", "solfiti"],
       },
       {
         nome: "Tartare di salmone",
         testo:
           "Tartare di salmone condita con sale Maldon e olio di produzione propria.",
-        prezzo: "15,00",
+        prezzo: "18,00",
         allergeni: ["crostacei", "uova", "pesce", "soia", "sedano", "solfiti"],
       },
       {
         nome: "Tartare di gamberoni *",
         testo:
           "Tartare di gamberoni condita con sale Maldon, senape di grani e olio di produzione propria.",
-        prezzo: "15,00",
+        prezzo: "18,00",
         allergeni: ["crostacei", "uova", "pesce", "soia", "sedano", "solfiti"],
       },
       {
         sottosezione: "i freddi",
       },
       {
-        nome: "Insalata di seppia *",
+        nome: "Tagliatella di seppia *",
         testo:
-          "Tagliatella di seppia, gamberi rosa, patate allo zafferano e salicornia.",
-        prezzo: "13,00",
+          "Tagliatella di seppia, scampi e Wakame",
+        prezzo: "15,00",
         allergeni: ["crostacei", "uova", "pesce", "solfiti"],
       },
       {
         nome: "Gamberone alla catalana *",
         testo:
           "Gamberoni al vapore alla catalana (carote, sedano, cipolla di Tropea, pomodorini, fiori di cappero, sale Maldon e olio di produzione propria).",
-        prezzo: "13,00",
+        prezzo: "15,00",
         allergeni: ["crostacei", "pesce", "sedano", "solfiti"],
       },
       {
         nome: "Salmone marinato",
         testo:
-          "Salmone marinato a secco con soncino, pesche, filetti di mandorle tostate e panna acida.",
-        prezzo: "13,00",
+          "Salmone 'marinato a secco', finocchio, mirtilli e confettura di arancia amara",
+        prezzo: "15,00",
         allergeni: ["pesce", "latte", "frutta a guscio", "solfiti"],
-      },
-      {
-        nome: "Filetto di sgombro *",
-        testo: "Sgombro con cipolla di Tropea caramellata.",
-        prezzo: "13,00",
-        allergeni: ["pesce", "solfiti"],
       },
       {
         nome: "Baccalà mantecato *",
         testo:
-          "Baccalà delle isole Lofoten IGP mantecato con chips di patate vitelotte e clorofilla di prezzemolo.",
+          "Baccalà delle isole Lofoten IGP mantecato con chips di pane carasau e crolofilla di prezzemolo",
         prezzo: "15,00",
         allergeni: ["pesce", "latte", "frutta a guscio", "solfiti"],
+      },
+      {
+        sottosezione: "i caldi",
+      },
+      {
+        nome: "Tonno scottato *",
+        testo:
+          "Tonno scottato con maionese ai frutti di bosco e germogli di soia.",
+        prezzo: "15,00",
+        allergeni: ["cereali", "uova", "pesce", "molluschi","soia"],
+      },
+      {
+        nome: "Seppiolina arrosto*",
+        testo:
+          "Seppiolina arrosto con peperoni",
+        prezzo: "15,00",
+        allergeni: ["cereali", "molluschi"],
+      },
+      {
+        nome: "Capesante al tartufo*",
+        testo:
+          "Capasante,tartufo nero estivo e spaghetti di zucchine",
+        prezzo: "20,00",
+        allergeni: ["cereali", "uova", "pesce", "molluschi","tartufo"],
+      },
+      {
+        nome: "Guazzetto*",
+        testo:
+          "Guazzetto di Moscardini dell’Adriatico",
+        prezzo: "18,00",
+        allergeni: ["cereali", "molluschi"],
       },
     ],
   },
@@ -124,10 +149,10 @@ const Ristorante = [
           "Su richiesta i primi possono essere sostituiti con prodotti gluten-free.",
       },
       {
-        nome: "risotto al nero di seppia *",
+        nome: "Risotto 'Acquerello' *",
         testo:
-          "Riso (Vialone nano) al nero di seppia profumato al lime con crudo di gamberi rossi di Mazzara e seppia.",
-        prezzo: "15,00",
+          "Riso 'Acquerello' mantecato cacio e pepe con crudo di gamberi rossi di Mazzara",
+        prezzo: "18,00",
         allergeni: ["crostacei", "pesce", "sedano", "solfiti", "molluschi"],
       },
       {
@@ -153,8 +178,8 @@ const Ristorante = [
       {
         nome: "paccheri blu all'astice",
         testo:
-          "Paccheri di Gragnano all'alga spirulina blu con astice al curaçao.",
-        prezzo: "20,00",
+          "Paccheri Rustichella D’Abruzzo all'Alga Spirulina blu con Astice al Curaçao",
+        prezzo: "22,00",
         allergeni: ["cereali", "crostacei", "pesce"],
       },
     ],
@@ -165,7 +190,7 @@ const Ristorante = [
       {
         nome: "tonno rosso scottato *",
         testo: "Tonno rosso scottato con cicorietta ripassata all'aglio nero.",
-        prezzo: "20,00",
+        prezzo: "22,00",
         allergeni: ["pesce"],
       },
       {
@@ -177,31 +202,23 @@ const Ristorante = [
       },
       {
         nome: "tagliata di spada *",
-        testo: "Tagliata di pesce spada con misticanza e lamelle di pesca.",
+        testo: "Tagliata di pesce spada con misticanza e lamelle di pesca e pistacchio.",
         prezzo: "20,00",
         allergeni: ["pesce"],
       },
       {
-        nome: "fish & chips",
-        testo: "Frittura (in base al pescato del giorno) e chips di patate.",
-        prezzo: "16,00",
+        nome: "Frittura",
+        testo: "Frittura (in base al pescato del giorno) e chips di verdure.",
+        prezzo: "18,00",
         allergeni: ["cereali", "crostacei", "molluschi"],
       },
-    ],
-  },
-  {
-    nome: "panini",
-    contenuto: [
       {
-        nome: "ciabatta con polpo",
-        prezzo: "13,00",
-        allergeni: ["cereali", "molluschi"],
+        nome: "Polpo alla brace",
+        testo: "Polpo Verace alla brace con patate allo zafferano",
+        prezzo: "20,00",
+        allergeni: ["cereali", "crostacei", "molluschi"],
       },
-      {
-        nome: "michetta con tonno",
-        prezzo: "13,00",
-        allergeni: ["cereali", "pesce"],
-      },
+      
     ],
   },
   {
@@ -222,7 +239,7 @@ const Ristorante = [
       {
         nome: "Sfogliatina di crema di fava tonka",
         testo:
-          "Sfogliatina croccante con crema pasticcera alla fava Tonka e frutti rossi.",
+          "Sfogliatina croccante con crema pasticcera alla fava Tonka",
         prezzo: "6,00",
         allergeni: ["cereali", "frutta a guscio"],
       },
@@ -232,14 +249,9 @@ const Ristorante = [
       },
       {
         nome: "sorbetto al limone",
-        prezzo: "3,00",
+        prezzo: "6,00",
       },
-      {
-        nome: "sorbetto corretto",
-        // testo: "Sorbetto al limone con prosecco.",
-        prezzo: "4,00",
-      },
-    ],
+     ],
   },
   {
     nome: "bevande",

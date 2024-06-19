@@ -32,10 +32,11 @@ const Ristorante = [
     contenuto: [
       {
         sottosezione: "I Crudi",
-      },    
+      },
       {
         nome: "Antipasti La Darsena",
-        testo: "Include una portata di guscio,una portata di crudo,un bis di freddi e un bis di caldi",
+        testo:
+          "Include una portata di guscio,una portata di crudo,un bis di freddi e un bis di caldi",
         prezzo: "45,00",
       },
       {
@@ -82,8 +83,7 @@ const Ristorante = [
       },
       {
         nome: "Tagliatella di seppia *",
-        testo:
-          "Tagliatella di seppia, scampi e Wakame",
+        testo: "Tagliatella di seppia, scampi e Wakame",
         prezzo: "15,00",
         allergeni: ["crostacei", "uova", "pesce", "solfiti"],
       },
@@ -116,26 +116,23 @@ const Ristorante = [
         testo:
           "Tonno scottato con maionese ai frutti di bosco e germogli di soia.",
         prezzo: "15,00",
-        allergeni: ["cereali", "uova", "pesce", "molluschi","soia"],
+        allergeni: ["cereali", "uova", "pesce", "molluschi", "soia"],
       },
       {
         nome: "Seppiolina arrosto*",
-        testo:
-          "Seppiolina arrosto con peperoni",
+        testo: "Seppiolina arrosto con peperoni",
         prezzo: "15,00",
         allergeni: ["cereali", "molluschi"],
       },
       {
         nome: "Capesante al tartufo*",
-        testo:
-          "Capasante,tartufo nero estivo e spaghetti di zucchine",
+        testo: "Capasante,tartufo nero estivo e spaghetti di zucchine",
         prezzo: "20,00",
-        allergeni: ["cereali", "uova", "pesce", "molluschi","tartufo"],
+        allergeni: ["cereali", "uova", "pesce", "molluschi", "tartufo"],
       },
       {
         nome: "Guazzetto*",
-        testo:
-          "Guazzetto di Moscardini dell’Adriatico",
+        testo: "Guazzetto di Moscardini dell’Adriatico",
         prezzo: "18,00",
         allergeni: ["cereali", "molluschi"],
       },
@@ -202,7 +199,8 @@ const Ristorante = [
       },
       {
         nome: "tagliata di spada *",
-        testo: "Tagliata di pesce spada con misticanza e lamelle di pesca e pistacchio.",
+        testo:
+          "Tagliata di pesce spada con misticanza e lamelle di pesca e pistacchio.",
         prezzo: "20,00",
         allergeni: ["pesce"],
       },
@@ -218,7 +216,6 @@ const Ristorante = [
         prezzo: "20,00",
         allergeni: ["cereali", "crostacei", "molluschi"],
       },
-      
     ],
   },
   {
@@ -238,8 +235,7 @@ const Ristorante = [
       },
       {
         nome: "Sfogliatina di crema di fava tonka",
-        testo:
-          "Sfogliatina croccante con crema pasticcera alla fava Tonka",
+        testo: "Sfogliatina croccante con crema pasticcera alla fava Tonka",
         prezzo: "6,00",
         allergeni: ["cereali", "frutta a guscio"],
       },
@@ -251,7 +247,7 @@ const Ristorante = [
         nome: "sorbetto al limone",
         prezzo: "6,00",
       },
-     ],
+    ],
   },
   {
     nome: "bevande",
@@ -359,10 +355,6 @@ const Ristorante = [
       {
         nome: "Distillati",
         prezzo: "6,00",
-      },
-      {
-        informazione:
-          "Coperto €2,00",
       },
     ],
   },

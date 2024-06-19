@@ -6,22 +6,22 @@ const RistorantePranzo = [
     nome: "piatti freddi",
     contenuto: [
       {
-        nome: "Insalatona mozzarella, tonno e mais",
-        prezzo: "6,50",
-      },
-      {
         nome: "Insalata mista",
-        prezzo: "4,00",
-      },
-      {
-        nome: "Mozzarella caprese",
-        prezzo: "6,50",
+        prezzo: "4,50",
       },
       {
         nome: "contorno del giorno",
-        prezzoSpecial: "a partire da € 4,00",
+        prezzoSpecial: "a partire da € 4,50",
       },
-    ],
+      {
+        nome: "Insalatona mozzarella, tonno e mais",
+        prezzo: "7,00",
+      },
+      {
+        nome: "Mozzarella caprese",
+        prezzo: "7,00",
+      },
+  ],
   },
   {
     nome: "antipasti ",
@@ -71,11 +71,11 @@ const RistorantePranzo = [
     contenuto: [
       {
         nome: "panino al prosciutto cotto",
-        prezzo: "4,00",
+        prezzo: "4,50",
       },
       {
         nome: "panino al salame",
-        prezzo: "4,00",
+        prezzo: "4,50",
       },
       {
         nome: "panino al prosciutto crudo",
@@ -83,27 +83,23 @@ const RistorantePranzo = [
       },
       {
         nome: "panino prosciutto crudo e formaggio",
-        prezzo: "5,00",
+        prezzo: "7,00",
       },
       {
         nome: "panino bresaola e scaglie di grana",
-        prezzo: "6,00",
+        prezzo: "7,00",
       },
       {
         nome: "panino mozzarella e pomodoro",
-        prezzo: "4,50",
-      },
-      {
-        nome: "panino tonno e pomodoro",
-        prezzo: "4,50",
+        prezzo: "5,00",
       },
       {
         nome: "panino farcito al tonno",
-        prezzo: "4,00",
+        prezzo: "4,50",
       },
       {
         nome: "panino prosciutto crudo e mozzarella",
-        prezzo: "5,00",
+        prezzo: "5,50",
       },
       {
         nome: "trancio di pizza",
@@ -116,27 +112,15 @@ const RistorantePranzo = [
     contenuto: [
       {
         nome: "cartoccio di chips",
-        prezzo: "4,00",
+        prezzo: "4,50",
       },
       {
         nome: "pizzonde",
         prezzo: "2,00",
       },
       {
-        nome: "pizzonde con pomodoro e mozzarella",
-        prezzo: "4,50",
-      },
-      {
-        nome: "pizzonde con prosciutto crudo e mozzarella",
-        prezzo: "5,00",
-      },
-      {
-        nome: "pizzonde con prosciutto crudo e pecorino",
-        prezzo: "5,00",
-      },
-      {
-        nome: "pizzonde con nutella",
-        prezzo: "3,00",
+        nome: "Focaccia Romana",
+        prezzo: "2,50",
       },
     ],
   },
@@ -146,11 +130,11 @@ const RistorantePranzo = [
       { sottosezione: "frutta" },
       {
         nome: "coppetta di ananas, melone e anguria",
-        prezzo: "4,00",
+        prezzo: "4,50",
       },
       {
         nome: "fetta di anguria o melone",
-        prezzo: "5,00",
+        prezzo: "5,50",
       },
       { sottosezione: "dolci" },
       {
@@ -163,11 +147,11 @@ const RistorantePranzo = [
       },
       {
         nome: "coppa tiramisù (semifreddo)",
-        prezzo: "4,00",
+        prezzo: "4,50",
       },
       {
         nome: "pistacchiotto (semifreddo)",
-        prezzo: "4,00",
+        prezzo: "4,50",
       },
     ],
   },
